@@ -1,0 +1,37 @@
+{
+  "name": "@coderskm/greeting-package",
+  "version": "1.0.0",
+  "description": "This package is built for greeting people",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "build": "rollup -c"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/coderskm/greeting_package.git"
+  },
+  "exports": {
+    "import": {
+      "default": "./lib/index.esm.js",
+      "types":"./lib/types"
+    },
+    "require":{
+      "default":"./lib/index.cjs",
+      "types":"./lib/types"
+    }
+  },
+  "files":["lib"],
+  "author": "coderskm",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/coderskm/greeting_package/issues"
+  },
+  "homepage": "https://github.com/coderskm/greeting_package#readme",
+  "devDependencies": {
+    "rollup": "^4.17.2",
+    "rollup-plugin-delete": "^2.0.0",
+    "rollup-plugin-typescript2": "^0.36.0",
+    "typescript": "^5.4.5"
+  }
+}
